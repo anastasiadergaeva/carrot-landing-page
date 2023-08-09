@@ -1,0 +1,79 @@
+@mixin central {
+    max-width: 1320px;
+    margin: 0 auto;
+    width: 100%;
+    padding-left: 30px;
+    padding-right:30px;
+}
+
+@mixin central-links {
+    max-width: 1440px; 
+    margin: 0 auto;
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+$blockview: 1px solid orange;
+
+.header {
+    @include central-links;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cover__img {
+    height: 180px;
+    width: 180px;
+}
+
+.links {
+    &__list {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.mainsection {
+    @include central;
+    display: grid;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 100px 50px;
+    &__logo {
+        grid-area: 1/1/2/2;
+        height: 256px;
+        width: 256px;
+    }
+    &__header {
+        grid-area: 1/2/2/3;
+    }
+    &__description {
+        grid-area: 2/1/3/3;
+    }
+}
+
+.projects {
+    @include central;
+}
+
+.hypester {
+    @include central;
+    &screenshots {
+        display: flex;
+        justify-content: space-between;
+        &__img {
+            width: 102px;
+            height: 182px;
+        }
+    }
+}
+
+.aboutus {
+    @include central;
+}
+
+.footer {
+    &__contacts {
+        @include central;
+    }
+}
