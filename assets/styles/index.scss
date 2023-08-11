@@ -1,98 +1,102 @@
-@mixin central {
-    max-width: 1320px;
-    margin: 0 auto;
-    width: 100%;
-    padding-left: 30px;
-    padding-right:30px;
-}
-
-@mixin central-links {
-    max-width: 1440px; 
-    margin: 0 auto;
-    width: 100%;
-    padding-left: 30px;
-    padding-right: 30px;
-}
-
-$blockview: 1px solid orange;
-$mainfont: 'Roboto', sans-serif;
-
 .header {
-    @include central-links;
-    display: flex;
-    justify-content: space-between;
-    // border: $blockview;
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .cover__img {
-    height: 6.5em;
-    width: 6em;
+  height: 6.5em;
+  width: 6em;
 }
 
 .links-list {
-    display: inline-flex;
-    column-gap: 1.25em;
-    padding-top: 1.5em;
-    a {
-        text-decoration: none;
-        color: inherit;
-        font-family: $mainfont;
-        font-size: 1.5em;
-        font-weight: bolder;
-    }
-    li {
-        list-style-type: none;
-    }
+  display: inline-flex;
+  column-gap: 1.25em;
+  padding-top: 1.5em;
+}
+.links-list a {
+  text-decoration: none;
+  color: inherit;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5em;
+  font-weight: bolder;
+}
+.links-list li {
+  list-style-type: none;
 }
 
 .mainsection {
-    @include central;
-    display: grid;
-    grid-template-columns: 20em 20em 20em 20em;
-    grid-template-rows: 16em 4.75em;
-    &__logo {
-        grid-area: 1/2/2/3;
-        height: 256px;
-        width: 256px;
-        margin: 0 auto;
-    }
-    &__header {
-        grid-area: 1/3/2/4;
-        text-align: center;
-        padding-top: 0.35em;
-        font-family: $mainfont;
-        font-size: 5em;
-        font-weight: bold;
-    }
-    &__description {
-        grid-area: 2/2/3/4;
-        text-align: center;
-        padding-left: 3em;
-        font-family: $mainfont;
-        font-size: 1.5rem;
-    }
+  max-width: 1320px;
+  margin: 0 auto;
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+  display: grid;
+  grid-template-columns: 20em 20em 20em 20em;
+  grid-template-rows: 16em 4.75em;
+}
+.mainsection__logo {
+  grid-area: 1/2/2/3;
+  height: 256px;
+  width: 256px;
+  margin: 0 auto;
+}
+.mainsection__header {
+  grid-area: 1/3/2/4;
+  text-align: center;
+  padding-top: 0.35em;
+  font-family: "Roboto", sans-serif;
+  font-size: 5em;
+  font-weight: bold;
+}
+.mainsection__description {
+  grid-area: 2/2/3/4;
+  text-align: center;
+  padding-left: 3em;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
 }
 
 .projects {
-    @include central;
+  max-width: 1320px;
+  margin: 0 auto;
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 #hypester {
-    @include central;
-    &screenshots {
-        display: flex;
-        justify-content: space-between;
-        &__img {
-            width: 3em;
-            height: 3em;
-        }
-    }
+  max-width: 1320px;
+  margin: 0 auto;
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+#hypesterscreenshots {
+  display: flex;
+  justify-content: space-between;
+}
+#hypesterscreenshots__img {
+  width: 3em;
+  height: 3em;
 }
 
 #aboutus {
-    @include central;
+  max-width: 1320px;
+  margin: 0 auto;
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 #contacts {
-        @include central;
-    }
+  max-width: 1320px;
+  margin: 0 auto;
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+}
