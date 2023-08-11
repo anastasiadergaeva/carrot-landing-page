@@ -15,40 +15,61 @@
 }
 
 $blockview: 1px solid orange;
+$mainfont: 'Roboto', sans-serif;
 
 .header {
     @include central-links;
     display: flex;
     justify-content: space-between;
+    // border: $blockview;
 }
 
 .cover__img {
-    height: 180px;
-    width: 180px;
+    height: 6.5em;
+    width: 6em;
 }
 
-.links {
-    &__list {
-        display: flex;
-        justify-content: space-between;
+.links-list {
+    display: inline-flex;
+    column-gap: 1.25em;
+    padding-top: 1.5em;
+    a {
+        text-decoration: none;
+        color: inherit;
+        font-family: $mainfont;
+        font-size: 1.5em;
+        font-weight: bolder;
+    }
+    li {
+        list-style-type: none;
     }
 }
 
 .mainsection {
     @include central;
     display: grid;
-    grid-template-columns: 300px 300px;
-    grid-template-rows: 100px 50px;
+    grid-template-columns: 20em 20em 20em 20em;
+    grid-template-rows: 16em 4.75em;
     &__logo {
-        grid-area: 1/1/2/2;
+        grid-area: 1/2/2/3;
         height: 256px;
         width: 256px;
+        margin: 0 auto;
     }
     &__header {
-        grid-area: 1/2/2/3;
+        grid-area: 1/3/2/4;
+        text-align: center;
+        padding-top: 0.35em;
+        font-family: $mainfont;
+        font-size: 5em;
+        font-weight: bold;
     }
     &__description {
-        grid-area: 2/1/3/3;
+        grid-area: 2/2/3/4;
+        text-align: center;
+        padding-left: 3em;
+        font-family: $mainfont;
+        font-size: 1.5rem;
     }
 }
 
@@ -56,24 +77,22 @@ $blockview: 1px solid orange;
     @include central;
 }
 
-.hypester {
+#hypester {
     @include central;
     &screenshots {
         display: flex;
         justify-content: space-between;
         &__img {
-            width: 102px;
-            height: 182px;
+            width: 3em;
+            height: 3em;
         }
     }
 }
 
-.aboutus {
+#aboutus {
     @include central;
 }
 
-.footer {
-    &__contacts {
+#contacts {
         @include central;
     }
-}
