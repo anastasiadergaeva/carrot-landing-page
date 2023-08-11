@@ -9,13 +9,24 @@
 }
 
 .cover__img {
-  height: 180px;
-  width: 180px;
+  height: 6.5em;
+  width: 6em;
 }
 
-.links__list {
-  display: flex;
-  justify-content: space-between;
+.links-list {
+  display: inline-flex;
+  column-gap: 1.25em;
+  padding-top: 1.5em;
+}
+.links-list a {
+  text-decoration: none;
+  color: inherit;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5em;
+  font-weight: bolder;
+}
+.links-list li {
+  list-style-type: none;
 }
 
 .mainsection {
@@ -25,19 +36,29 @@
   padding-left: 30px;
   padding-right: 30px;
   display: grid;
-  grid-template-columns: 300px 300px;
-  grid-template-rows: 100px 50px;
+  grid-template-columns: 20em 20em 20em 20em;
+  grid-template-rows: 16em 4.75em;
 }
 .mainsection__logo {
-  grid-area: 1/1/2/2;
+  grid-area: 1/2/2/3;
   height: 256px;
   width: 256px;
+  margin: 0 auto;
 }
 .mainsection__header {
-  grid-area: 1/2/2/3;
+  grid-area: 1/3/2/4;
+  text-align: center;
+  padding-top: 0.35em;
+  font-family: "Roboto", sans-serif;
+  font-size: 5em;
+  font-weight: bold;
 }
 .mainsection__description {
-  grid-area: 2/1/3/3;
+  grid-area: 2/2/3/4;
+  text-align: center;
+  padding-left: 3em;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
 }
 
 .projects {
@@ -48,23 +69,23 @@
   padding-right: 30px;
 }
 
-.hypester {
+#hypester {
   max-width: 1320px;
   margin: 0 auto;
   width: 100%;
   padding-left: 30px;
   padding-right: 30px;
 }
-.hypesterscreenshots {
+#hypesterscreenshots {
   display: flex;
   justify-content: space-between;
 }
-.hypesterscreenshots__img {
-  width: 102px;
-  height: 182px;
+#hypesterscreenshots__img {
+  width: 3em;
+  height: 3em;
 }
 
-.aboutus {
+#aboutus {
   max-width: 1320px;
   margin: 0 auto;
   width: 100%;
@@ -72,7 +93,7 @@
   padding-right: 30px;
 }
 
-.footer__contacts {
+#contacts {
   max-width: 1320px;
   margin: 0 auto;
   width: 100%;
