@@ -75,6 +75,14 @@ $mainfont: 'Roboto', sans-serif;
 
 .projects {
     @include central;
+    height: 4em;
+    background-color: rgba(166, 227, 237, 0.283);
+    &__header {
+        text-align: center;
+        font-family: $mainfont;
+        font-size: 2em;
+        padding-top: 0.4em;
+    }
 }
 
 #hypester {
