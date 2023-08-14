@@ -101,10 +101,22 @@
   padding-right: 30px;
 }
 
+.aboutus__header {
+  font-family: "Roboto", sans-serif;
+  font-size: 2em;
+  padding-top: 0.4em;
+}
+
 #contacts {
   max-width: 1320px;
   margin: 0 auto;
   width: 100%;
   padding-left: 30px;
   padding-right: 30px;
+}
+
+.contacts__header {
+  font-family: "Roboto", sans-serif;
+  font-size: 2em;
+  padding-top: 0.4em;
 }

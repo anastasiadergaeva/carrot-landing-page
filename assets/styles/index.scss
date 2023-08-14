@@ -101,6 +101,18 @@ $mainfont: 'Roboto', sans-serif;
     @include central;
 }
 
+.aboutus__header {
+    font-family: $mainfont;
+    font-size: 2em;
+    padding-top: 0.4em;
+}
+
 #contacts {
-        @include central;
-    }
+    @include central;
+}
+
+.contacts__header {
+    font-family: $mainfont;
+    font-size: 2em;
+    padding-top: 0.4em;
+}
