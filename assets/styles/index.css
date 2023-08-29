@@ -123,9 +123,18 @@
 }
 
 .aboutus__header {
+  text-align: center;
   font-family: "Roboto", sans-serif;
   font-size: 2em;
   padding-top: 0.4em;
+  background-color: rgba(166, 227, 237, 0.283);
+  padding-bottom: 0.3em;
+}
+
+.aboutus__description {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
 }
 
 #contacts {
@@ -137,6 +146,7 @@
 }
 
 .contacts__header {
+  text-align: center;
   font-family: "Roboto", sans-serif;
   font-size: 2em;
   padding-top: 0.4em;

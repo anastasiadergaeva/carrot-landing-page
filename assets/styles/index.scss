@@ -14,14 +14,27 @@
     padding-right: 30px;
 }
 
+@mixin text-styles {
+    text-align: center;
+    font-family: $mainfont;
+    font-size: 1.5rem;
+}
+
+@mixin headers {
+    text-align: center;
+    font-family: $mainfont;
+    font-size: 2em;
+    padding-top: 0.4em;
+}
+
 $blockview: 1px solid orange;
 $mainfont: 'Roboto', sans-serif;
+$header-background: rgba(166, 227, 237, 0.283);
 
 .header {
     @include central-links;
     display: flex;
     justify-content: space-between;
-    // border: $blockview;
 }
 
 .cover__img {
@@ -76,7 +89,7 @@ $mainfont: 'Roboto', sans-serif;
 .projects {
     @include central;
     height: 4em;
-    background-color: rgba(166, 227, 237, 0.283);
+    background-color: $header-background;
     &__header {
         text-align: center;
         font-family: $mainfont;
@@ -107,15 +120,11 @@ $mainfont: 'Roboto', sans-serif;
 }
 
 .hypester__description {
-    text-align: center;
-    font-family: $mainfont;
-    font-size: 1.5rem;
+    @include text-styles;
 }
 
 .hypester__text {
-    text-align: center;
-    font-family: $mainfont;
-    font-size: 1.5rem;
+    @include text-styles;
 }
 
 #aboutus {
@@ -123,9 +132,13 @@ $mainfont: 'Roboto', sans-serif;
 }
 
 .aboutus__header {
-    font-family: $mainfont;
-    font-size: 2em;
-    padding-top: 0.4em;
+    @include headers;
+    background-color: $header-background;
+    padding-bottom: 0.3em;
+}
+
+.aboutus__description {
+    @include text-styles;
 }
 
 #contacts {
@@ -133,7 +146,5 @@ $mainfont: 'Roboto', sans-serif;
 }
 
 .contacts__header {
-    font-family: $mainfont;
-    font-size: 2em;
-    padding-top: 0.4em;
+    @include headers;
 }
