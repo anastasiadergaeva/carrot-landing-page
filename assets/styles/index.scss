@@ -87,15 +87,35 @@ $mainfont: 'Roboto', sans-serif;
 
 #hypester {
     @include central;
-    &screenshots {
-        display: grid;
-        justify-content: space-around;
-        gap: 1em;
-        &__img {
-            width: 408px;
-            height: 728;
-        }
+}
+
+.hypester__header {
+    text-align: center;
+    padding-top: 0.35em;
+    font-family: $mainfont;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.screenshots {
+    display: flex;
+    justify-content: space-between;
+    &__img {
+        width: 408px;
+        height: 728;
     }
+}
+
+.hypester__description {
+    text-align: center;
+    font-family: $mainfont;
+    font-size: 1.5rem;
+}
+
+.hypester__text {
+    text-align: center;
+    font-family: $mainfont;
+    font-size: 1.5rem;
 }
 
 #aboutus {

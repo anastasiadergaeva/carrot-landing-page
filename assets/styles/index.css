@@ -84,14 +84,34 @@
   padding-left: 30px;
   padding-right: 30px;
 }
-#hypesterscreenshots {
-  display: grid;
-  justify-content: space-around;
-  gap: 1em;
+
+.hypester__header {
+  text-align: center;
+  padding-top: 0.35em;
+  font-family: "Roboto", sans-serif;
+  font-size: 2em;
+  font-weight: bold;
 }
-#hypesterscreenshots__img {
+
+.screenshots {
+  display: flex;
+  justify-content: space-between;
+}
+.screenshots__img {
   width: 408px;
   height: 728;
+}
+
+.hypester__description {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+}
+
+.hypester__text {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
 }
 
 #aboutus {
@@ -121,5 +141,3 @@
   font-size: 2em;
   padding-top: 0.4em;
 }
-
-/*# sourceMappingURL=index.css.map */
