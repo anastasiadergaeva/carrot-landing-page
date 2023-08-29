@@ -88,11 +88,12 @@ $mainfont: 'Roboto', sans-serif;
 #hypester {
     @include central;
     &screenshots {
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        justify-content: space-around;
+        gap: 1em;
         &__img {
-            width: 3em;
-            height: 3em;
+            width: 408px;
+            height: 728;
         }
     }
 }

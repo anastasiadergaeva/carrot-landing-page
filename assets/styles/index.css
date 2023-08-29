@@ -85,12 +85,13 @@
   padding-right: 30px;
 }
 #hypesterscreenshots {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  justify-content: space-around;
+  gap: 1em;
 }
 #hypesterscreenshots__img {
-  width: 3em;
-  height: 3em;
+  width: 408px;
+  height: 728;
 }
 
 #aboutus {
@@ -120,3 +121,5 @@
   font-size: 2em;
   padding-top: 0.4em;
 }
+
+/*# sourceMappingURL=index.css.map */
