@@ -1,18 +1,18 @@
-@mixin central {
-    max-width: 1220px;
-    margin: 0 auto; 
+@mixin central { 
     width: 100%; 
-    padding-left: 50px; 
-    padding-right: 50px; 
+    max-width: 1200px;
+    margin: 0px auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
-@mixin central-links {
-    max-width: 1260px; 
-    margin: 0 auto;
-    width: 100%;
-    padding-left: 30px;
-    padding-right: 30px;
-}
+// @mixin central-links {
+//     max-width: 1200px; 
+//     margin: 0;
+//     width: 100%;
+//     padding-left: 30px;
+//     padding-right: 30px;
+// }
 
 @mixin text-styles {
     text-align: center;
@@ -43,12 +43,10 @@ $blockview: 1px solid orange;
 $mainfont: 'Roboto', sans-serif;
 $header-background: rgba(166, 227, 237, 0.283);
 
-body {
-    overflow-x: hidden;
-}
-
 .header {
-    @include central-links;
+    @include central;
+    overflow-x: hidden;
+    padding: 0;
     display: flex;
     justify-content: space-between;
 }

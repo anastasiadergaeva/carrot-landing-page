@@ -1,13 +1,11 @@
-body {
-  overflow-x: hidden;
-}
-
 .header {
-  max-width: 1260px;
-  margin: 0 auto;
   width: 100%;
-  padding-left: 30px;
-  padding-right: 30px;
+  max-width: 1200px;
+  margin: 0px auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  overflow-x: hidden;
+  padding: 0;
   display: flex;
   justify-content: space-between;
 }
@@ -34,11 +32,11 @@ body {
 }
 
 .mainsection {
-  max-width: 1220px;
-  margin: 0 auto;
   width: 100%;
-  padding-left: 50px;
-  padding-right: 50px;
+  max-width: 1200px;
+  margin: 0px auto;
+  padding-left: 15px;
+  padding-right: 15px;
   display: grid;
   grid-template-columns: 20em 20em 20em 20em;
   grid-template-rows: 16em 4.75em;
@@ -66,11 +64,11 @@ body {
 }
 
 .projects {
-  max-width: 1220px;
-  margin: 0 auto;
   width: 100%;
-  padding-left: 50px;
-  padding-right: 50px;
+  max-width: 1200px;
+  margin: 0px auto;
+  padding-left: 15px;
+  padding-right: 15px;
   height: 4em;
   background-color: rgba(166, 227, 237, 0.283);
 }
@@ -82,11 +80,11 @@ body {
 }
 
 #hypester {
-  max-width: 1220px;
-  margin: 0 auto;
   width: 100%;
-  padding-left: 50px;
-  padding-right: 50px;
+  max-width: 1200px;
+  margin: 0px auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .hypester__header {
@@ -120,11 +118,11 @@ body {
 }
 
 #aboutus {
-  max-width: 1220px;
-  margin: 0 auto;
   width: 100%;
-  padding-left: 50px;
-  padding-right: 50px;
+  max-width: 1200px;
+  margin: 0px auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .aboutus__header {
@@ -150,11 +148,11 @@ body {
 }
 
 #contacts {
-  max-width: 1220px;
-  margin: 0 auto;
   width: 100%;
-  padding-left: 50px;
-  padding-right: 50px;
+  max-width: 1200px;
+  margin: 0px auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .contacts__header {
