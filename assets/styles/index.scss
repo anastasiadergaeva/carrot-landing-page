@@ -1,17 +1,17 @@
 @mixin central {
-    max-width: 1300px;
-    margin: 0 auto;
-    width: 100%;
-    padding-left: 40px;
-    padding-right: 40px;
+    max-width: 1440px; 
+    margin: 0 auto; 
+    width: 100%; 
+    padding-left: 30px; 
+    padding-right: 30px; 
 }
 
 @mixin central-links {
     max-width: 1440px; 
     margin: 0 auto;
     width: 100%;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 @mixin text-styles {
@@ -114,8 +114,8 @@ $header-background: rgba(166, 227, 237, 0.283);
     display: flex;
     justify-content: space-between;
     &__img {
-        width: 408px;
-        height: 728;
+        width: 25em;
+        height: 45.4em;
     }
 }
 
@@ -140,6 +140,8 @@ $header-background: rgba(166, 227, 237, 0.283);
 .aboutus__img {
     display: block;
     margin: auto;
+    width: 25em;
+    height: 45.5em;
 }
 .aboutus__description {
     @include text-styles;
@@ -152,4 +154,5 @@ $header-background: rgba(166, 227, 237, 0.283);
 .contacts__header {
     @include headers;
     background-color: $header-background;
+    padding-bottom: 0.3em;
 }
