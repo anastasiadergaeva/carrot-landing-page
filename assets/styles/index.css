@@ -30,11 +30,11 @@
 }
 
 .mainsection {
-  max-width: 1320px;
+  max-width: 1300px;
   margin: 0 auto;
   width: 100%;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
   display: grid;
   grid-template-columns: 20em 20em 20em 20em;
   grid-template-rows: 16em 4.75em;
@@ -62,11 +62,11 @@
 }
 
 .projects {
-  max-width: 1320px;
+  max-width: 1300px;
   margin: 0 auto;
   width: 100%;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
   height: 4em;
   background-color: rgba(166, 227, 237, 0.283);
 }
@@ -78,11 +78,11 @@
 }
 
 #hypester {
-  max-width: 1320px;
+  max-width: 1300px;
   margin: 0 auto;
   width: 100%;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .hypester__header {
@@ -115,11 +115,11 @@
 }
 
 #aboutus {
-  max-width: 1320px;
+  max-width: 1300px;
   margin: 0 auto;
   width: 100%;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .aboutus__header {
@@ -131,6 +131,11 @@
   padding-bottom: 0.3em;
 }
 
+.aboutus__img {
+  display: block;
+  margin: auto;
+}
+
 .aboutus__description {
   text-align: center;
   font-family: "Roboto", sans-serif;
@@ -138,11 +143,11 @@
 }
 
 #contacts {
-  max-width: 1320px;
+  max-width: 1300px;
   margin: 0 auto;
   width: 100%;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .contacts__header {
@@ -150,4 +155,5 @@
   font-family: "Roboto", sans-serif;
   font-size: 2em;
   padding-top: 0.4em;
+  background-color: rgba(166, 227, 237, 0.283);
 }

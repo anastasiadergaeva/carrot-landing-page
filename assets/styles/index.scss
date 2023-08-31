@@ -1,9 +1,9 @@
 @mixin central {
-    max-width: 1320px;
+    max-width: 1300px;
     margin: 0 auto;
     width: 100%;
-    padding-left: 30px;
-    padding-right:30px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 @mixin central-links {
@@ -137,6 +137,10 @@ $header-background: rgba(166, 227, 237, 0.283);
     padding-bottom: 0.3em;
 }
 
+.aboutus__img {
+    display: block;
+    margin: auto;
+}
 .aboutus__description {
     @include text-styles;
 }
@@ -147,4 +151,5 @@ $header-background: rgba(166, 227, 237, 0.283);
 
 .contacts__header {
     @include headers;
+    background-color: $header-background;
 }
