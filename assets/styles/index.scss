@@ -7,7 +7,7 @@
 }
 
 @mixin central-links {
-    max-width: 1320px; 
+    max-width: 1260px; 
     margin: 0 auto;
     width: 100%;
     padding-left: 30px;
@@ -42,6 +42,10 @@
 $blockview: 1px solid orange;
 $mainfont: 'Roboto', sans-serif;
 $header-background: rgba(166, 227, 237, 0.283);
+
+body {
+    overflow-x: hidden;
+}
 
 .header {
     @include central-links;
