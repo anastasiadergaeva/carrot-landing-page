@@ -1,9 +1,9 @@
 .header {
-  max-width: 1440px;
+  max-width: 1320px;
   margin: 0 auto;
   width: 100%;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
   display: flex;
   justify-content: space-between;
 }
@@ -30,11 +30,11 @@
 }
 
 .mainsection {
-  max-width: 1440px;
+  max-width: 1220px;
   margin: 0 auto;
   width: 100%;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
   display: grid;
   grid-template-columns: 20em 20em 20em 20em;
   grid-template-rows: 16em 4.75em;
@@ -62,11 +62,11 @@
 }
 
 .projects {
-  max-width: 1440px;
+  max-width: 1220px;
   margin: 0 auto;
   width: 100%;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
   height: 4em;
   background-color: rgba(166, 227, 237, 0.283);
 }
@@ -78,11 +78,11 @@
 }
 
 #hypester {
-  max-width: 1440px;
+  max-width: 1220px;
   margin: 0 auto;
   width: 100%;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .hypester__header {
@@ -96,6 +96,7 @@
 .screenshots {
   display: flex;
   justify-content: space-between;
+  gap: 0.1em;
 }
 .screenshots__img {
   width: 25em;
@@ -115,11 +116,11 @@
 }
 
 #aboutus {
-  max-width: 1440px;
+  max-width: 1220px;
   margin: 0 auto;
   width: 100%;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .aboutus__header {
@@ -145,11 +146,11 @@
 }
 
 #contacts {
-  max-width: 1440px;
+  max-width: 1220px;
   margin: 0 auto;
   width: 100%;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .contacts__header {
@@ -159,4 +160,37 @@
   padding-top: 0.4em;
   background-color: rgba(166, 227, 237, 0.283);
   padding-bottom: 0.3em;
+}
+
+@media (max-width: 900px) {
+  .mainsection {
+    max-width: 600px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .projects {
+    max-width: 600px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  #hypester {
+    max-width: 600px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  #aboutus {
+    max-width: 600px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  #contacts {
+    max-width: 600px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .header {
+    max-width: 600px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }

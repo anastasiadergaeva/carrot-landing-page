@@ -1,17 +1,17 @@
 @mixin central {
-    max-width: 1440px; 
+    max-width: 1220px;
     margin: 0 auto; 
     width: 100%; 
-    padding-left: 30px; 
-    padding-right: 30px; 
+    padding-left: 50px; 
+    padding-right: 50px; 
 }
 
 @mixin central-links {
-    max-width: 1440px; 
+    max-width: 1320px; 
     margin: 0 auto;
     width: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 @mixin text-styles {
@@ -25,6 +25,18 @@
     font-family: $mainfont;
     font-size: 2em;
     padding-top: 0.4em;
+}
+
+@mixin central-laptop {
+    max-width: 600px; 
+    padding-left: 40px; 
+    padding-right: 40px;
+}
+
+@mixin central-links-laptop {
+    max-width: 600px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 $blockview: 1px solid orange;
@@ -113,6 +125,7 @@ $header-background: rgba(166, 227, 237, 0.283);
 .screenshots {
     display: flex;
     justify-content: space-between;
+    gap: 0.1em;
     &__img {
         width: 25em;
         height: 45.4em;
@@ -155,4 +168,30 @@ $header-background: rgba(166, 227, 237, 0.283);
     @include headers;
     background-color: $header-background;
     padding-bottom: 0.3em;
+}
+
+@media (max-width: 900px) { 
+    .mainsection { 
+    @include central-laptop;
+    }
+
+    .projects {
+        @include central-laptop;
+    }
+    
+    #hypester {
+        @include central-laptop;
+    } 
+
+    #aboutus {
+        @include central-laptop;
+    }
+
+    #contacts {
+        @include central-laptop;
+    }
+
+    .header {
+        @include central-links-laptop;
+    }
 }
