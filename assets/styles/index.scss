@@ -48,24 +48,23 @@ $header-background: rgba(166, 227, 237, 0.283);
     overflow-x: hidden;
     padding: 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
 
-.cover__img {
-    height: 6.5em;
-    width: 6em;
-}
+// .cover__img {
+//     height: 6.5em;
+//     width: 6em;
+// }
 
 .links-list {
     display: inline-flex;
-    column-gap: 1.25em;
+    gap: 5.5em;
     padding-top: 1.5em;
     a {
         text-decoration: none;
         color: inherit;
         font-family: $mainfont;
-        font-size: 1.5em;
-        font-weight: bolder;
+        font-size: 1.2em;
     }
     li {
         list-style-type: none;
