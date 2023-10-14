@@ -1,23 +1,15 @@
-@mixin central { 
-    width: 100%; 
+@mixin central {
+    width: 100%;
     max-width: 1200px;
     margin: 0px auto;
     padding-left: 15px;
     padding-right: 15px;
 }
 
-// @mixin central-links {
-//     max-width: 1200px; 
-//     margin: 0;
-//     width: 100%;
-//     padding-left: 30px;
-//     padding-right: 30px;
-// }
-
 @mixin text-styles {
-    text-align: center;
+    text-align: left;
     font-family: $mainfont;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
 
 @mixin headers {
@@ -25,18 +17,6 @@
     font-family: $mainfont;
     font-size: 2em;
     padding-top: 0.4em;
-}
-
-@mixin central-laptop {
-    max-width: 600px; 
-    padding-left: 40px; 
-    padding-right: 40px;
-}
-
-@mixin central-links-laptop {
-    max-width: 600px;
-    padding-left: 20px;
-    padding-right: 20px;
 }
 
 $blockview: 1px solid orange;
@@ -51,21 +31,18 @@ $header-background: rgba(166, 227, 237, 0.283);
     justify-content: flex-end;
 }
 
-// .cover__img {
-//     height: 6.5em;
-//     width: 6em;
-// }
-
 .links-list {
     display: inline-flex;
     gap: 5.5em;
     padding-top: 1.5em;
+
     a {
         text-decoration: none;
         color: inherit;
         font-family: $mainfont;
-        font-size: 1.2em;
+        font-size: 1.25em;
     }
+
     li {
         list-style-type: none;
     }
@@ -74,41 +51,36 @@ $header-background: rgba(166, 227, 237, 0.283);
 .mainsection {
     @include central;
     display: grid;
-    grid-template-columns: 20em 20em 20em 20em;
-    grid-template-rows: 16em 4.75em;
+    grid-template-columns: 12em 12em 20em 12em;
+    grid-template-rows: 12em 4.75em;
+    justify-content: center;
+
     &__logo {
         grid-area: 1/2/2/3;
-        height: 256px;
-        width: 256px;
+        height: 12em;
+        max-width: 90%;
         margin: 0 auto;
     }
+
     &__header {
         grid-area: 1/3/2/4;
-        text-align: center;
-        padding-top: 0.35em;
         font-family: $mainfont;
-        font-size: 5em;
+        font-size: 6rem;
         font-weight: bold;
     }
+
     &__description {
         grid-area: 2/2/3/4;
         text-align: center;
-        padding-left: 3em;
         font-family: $mainfont;
-        font-size: 1.5rem;
+        font-size: 1.25rem;
     }
 }
 
-.projects {
+.first-section {
     @include central;
     height: 4em;
-    background-color: $header-background;
-    &__header {
-        text-align: center;
-        font-family: $mainfont;
-        font-size: 2em;
-        padding-top: 0.4em;
-    }
+    background: linear-gradient(180deg, #F9F9F9 0%, #FFFFFF 100%);
 }
 
 #hypester {
@@ -119,17 +91,22 @@ $header-background: rgba(166, 227, 237, 0.283);
     text-align: center;
     padding-top: 0.35em;
     font-family: $mainfont;
-    font-size: 2em;
+    font-size: 2.5em;
     font-weight: bold;
 }
 
 .screenshots {
+    @include central;
     display: flex;
-    justify-content: space-between;
-    gap: 0.1em;
+    justify-content: space-around;
+    gap: 0.8em;
+
+    width: 62em;
+    height: 35em;
+
     &__img {
-        width: 25em;
-        height: 45.4em;
+        width: 100%;
+        height: auto;
     }
 }
 
@@ -138,7 +115,9 @@ $header-background: rgba(166, 227, 237, 0.283);
 }
 
 .hypester__text {
-    @include text-styles;
+    text-align: center;
+    font-family: $mainfont;
+    font-size: 1.25rem;
 }
 
 #aboutus {
@@ -147,7 +126,7 @@ $header-background: rgba(166, 227, 237, 0.283);
 
 .aboutus__header {
     @include headers;
-    background-color: $header-background;
+    background: linear-gradient(180deg, #F9F9F9 0%, #FFFFFF 100%);
     padding-bottom: 0.3em;
 }
 
@@ -157,6 +136,7 @@ $header-background: rgba(166, 227, 237, 0.283);
     width: 25em;
     height: 45.5em;
 }
+
 .aboutus__description {
     @include text-styles;
 }
@@ -169,30 +149,4 @@ $header-background: rgba(166, 227, 237, 0.283);
     @include headers;
     background-color: $header-background;
     padding-bottom: 0.3em;
-}
-
-@media (max-width: 900px) { 
-    .mainsection { 
-    @include central-laptop;
-    }
-
-    .projects {
-        @include central-laptop;
-    }
-    
-    #hypester {
-        @include central-laptop;
-    } 
-
-    #aboutus {
-        @include central-laptop;
-    }
-
-    #contacts {
-        @include central-laptop;
-    }
-
-    .header {
-        @include central-links-laptop;
-    }
 }
