@@ -19,6 +19,11 @@
     padding-top: 0.4em;
 }
 
+@mixin border-images {
+    border: 2px solid rgba(128, 128, 128, 0.721);
+    border-radius: 30px;
+}
+
 $blockview: 1px solid orange;
 $mainfont: 'Roboto', sans-serif;
 $header-background: rgba(166, 227, 237, 0.283);
@@ -83,10 +88,6 @@ $header-background: rgba(166, 227, 237, 0.283);
     background: linear-gradient(180deg, #F9F9F9 0%, #FFFFFF 100%);
 }
 
-#hypester {
-    @include central;
-}
-
 .hypester__header {
     text-align: center;
     padding-top: 0.35em;
@@ -105,13 +106,16 @@ $header-background: rgba(166, 227, 237, 0.283);
     height: 35em;
 
     &__img {
+        @include border-images;
         width: 100%;
         height: auto;
     }
 }
 
 .hypester__description {
+    @include central;
     @include text-styles;
+    padding-top: 20px;
 }
 
 .hypester__text {
@@ -120,17 +124,15 @@ $header-background: rgba(166, 227, 237, 0.283);
     font-size: 1.25rem;
 }
 
-#aboutus {
-    @include central;
-}
-
 .aboutus__header {
     @include headers;
     background: linear-gradient(180deg, #F9F9F9 0%, #FFFFFF 100%);
+    background-repeat: repeat-x;
     padding-bottom: 0.3em;
 }
 
 .aboutus__img {
+    @include central;
     display: block;
     margin: auto;
     width: 25em;
@@ -139,14 +141,12 @@ $header-background: rgba(166, 227, 237, 0.283);
 
 .aboutus__description {
     @include text-styles;
-}
-
-#contacts {
     @include central;
 }
 
 .contacts__header {
     @include headers;
     background-color: $header-background;
+    background-repeat: repeat-x;
     padding-bottom: 0.3em;
 }
