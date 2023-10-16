@@ -20,7 +20,7 @@
 }
 
 @mixin border-images {
-    border: 2px solid rgba(128, 128, 128, 0.721);
+    border: 2px solid rgba(156, 156, 156, 0.518);
     border-radius: 30px;
 }
 
@@ -131,17 +131,24 @@ $header-background: rgba(166, 227, 237, 0.283);
     padding-bottom: 0.3em;
 }
 
+.aboutmaincontent {
+    display: flex;
+    justify-content: space-between;
+}
+
 .aboutus__img {
     @include central;
     display: block;
     margin: auto;
-    width: 25em;
-    height: 45.5em;
+    width: 20em;
+    height: 20em;
 }
 
 .aboutus__description {
     @include text-styles;
     @include central;
+    text-align: left;
+    padding-top: 3em;
 }
 
 .contacts__header {

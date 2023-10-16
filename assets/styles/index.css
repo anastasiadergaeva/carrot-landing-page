@@ -86,7 +86,7 @@
   height: 35em;
 }
 .screenshots__img {
-  border: 2px solid rgba(128, 128, 128, 0.721);
+  border: 2px solid rgba(156, 156, 156, 0.518);
   border-radius: 30px;
   width: 100%;
   height: auto;
@@ -120,6 +120,11 @@
   padding-bottom: 0.3em;
 }
 
+.aboutmaincontent {
+  display: flex;
+  justify-content: space-between;
+}
+
 .aboutus__img {
   width: 100%;
   max-width: 1200px;
@@ -128,8 +133,8 @@
   padding-right: 15px;
   display: block;
   margin: auto;
-  width: 25em;
-  height: 45.5em;
+  width: 20em;
+  height: 20em;
 }
 
 .aboutus__description {
@@ -141,6 +146,8 @@
   margin: 0px auto;
   padding-left: 15px;
   padding-right: 15px;
+  text-align: left;
+  padding-top: 3em;
 }
 
 .contacts__header {
