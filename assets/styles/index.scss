@@ -88,7 +88,8 @@ $header-background: rgba(166, 227, 237, 0.283);
     background: linear-gradient(180deg, #F9F9F9 0%, #FFFFFF 100%);
 }
 
-.hypester__header {
+.hypester__header,
+.yarmarket__header {
     text-align: center;
     padding-top: 0.35em;
     font-family: $mainfont;
@@ -112,13 +113,15 @@ $header-background: rgba(166, 227, 237, 0.283);
     }
 }
 
-.hypester__description {
+.hypester__description,
+.yarmarket__description {
     @include central;
     @include text-styles;
     padding-top: 20px;
 }
 
-.hypester__text {
+.hypester__text,
+.yarmarket__text {
     text-align: center;
     font-family: $mainfont;
     font-size: 1.25rem;
