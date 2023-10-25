@@ -82,16 +82,17 @@ $header-background: rgba(166, 227, 237, 0.283);
     }
 }
 
-.first-section {
-    @include central;
-    height: 4em;
+#hypester,
+#yarmarket,
+#aboutus {
     background: linear-gradient(180deg, #F9F9F9 0%, #FFFFFF 100%);
+    background-repeat: repeat-x;
 }
 
 .hypester__header,
 .yarmarket__header {
     text-align: center;
-    padding-top: 0.35em;
+    padding-top: .8em;
     font-family: $mainfont;
     font-size: 2.5em;
     font-weight: bold;
@@ -115,9 +116,13 @@ $header-background: rgba(166, 227, 237, 0.283);
 
 .hypester__description,
 .yarmarket__description {
-    @include central;
+    width: 100%;
+    max-width: 1140px;
+    margin: 0px auto;
+    padding-left: 45px;
+    padding-right: 45px;
     @include text-styles;
-    padding-top: 20px;
+    padding-top: 50px;
 }
 
 .hypester__text,
@@ -129,9 +134,8 @@ $header-background: rgba(166, 227, 237, 0.283);
 
 .aboutus__header {
     @include headers;
-    background: linear-gradient(180deg, #F9F9F9 0%, #FFFFFF 100%);
-    background-repeat: repeat-x;
     padding-bottom: 0.3em;
+    padding-top: 0.9em;
 }
 
 .aboutmaincontent {
