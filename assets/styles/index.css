@@ -230,6 +230,7 @@ body {
 #aboutus {
   background: linear-gradient(180deg, #F9F9F9 0%, #FFFFFF 100%);
   background-repeat: repeat-x;
+  padding: 10px 0px 20px;
 }
 @media (max-width: 900px) {
   #hypester,
@@ -266,6 +267,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 2.5em;
   font-weight: bold;
+  padding: 10px 0px 10px;
 }
 @media (max-width: 900px) {
   .hypester__header,
@@ -386,6 +388,7 @@ body {
   text-align: center;
   font-family: "Roboto", sans-serif;
   font-size: 1.25rem;
+  padding: 10px 0px 20px;
 }
 @media (max-width: 767px) {
   .hypester__text,
@@ -463,7 +466,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 1.25rem;
   text-align: left;
-  padding-top: 3em;
+  padding-top: 2em;
 }
 @media (max-width: 900px) {
   .aboutus__description {
