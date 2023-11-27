@@ -172,6 +172,8 @@ body {
   grid-template-columns: 12em 12em 20em 12em;
   grid-template-rows: 12em 4.75em;
   justify-content: center;
+  gap: 1em;
+  padding-left: 3em;
 }
 .mainsection__logo {
   grid-area: 1/2/2/3;
@@ -202,6 +204,7 @@ body {
     display: grid;
     grid-template-columns: 5em 5em 15em 5em;
     grid-template-rows: 8em 4.75em;
+    padding-left: 3em;
   }
   .mainsection__logo {
     max-width: 100%;
@@ -209,6 +212,7 @@ body {
   }
   .mainsection__header {
     font-size: 3rem;
+    padding-top: 0.3em;
   }
   .mainsection__description {
     font-size: 1rem;
@@ -222,6 +226,7 @@ body {
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 0.1em;
+    padding-left: 3em;
   }
 }
 
@@ -497,4 +502,41 @@ body {
   .contacts__header {
     font-size: 1.5em;
   }
+}
+
+.contacts__info {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0px auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  padding-bottom: 1em;
+}
+.contacts__info .contacts__text {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.25rem;
+  padding-top: 1em;
+}
+.contacts__info .contacts__text span {
+  font-weight: bold;
+}
+
+.mail-button {
+  width: 10em;
+  height: 3em;
+  border: 2px solid rgba(156, 156, 156, 0.518);
+  border-radius: 30px;
+  background-color: rgba(166, 227, 237, 0.283);
+}
+.mail-button a {
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: black;
+  text-transform: lowercase;
+  font-family: "Roboto", sans-serif;
 }
