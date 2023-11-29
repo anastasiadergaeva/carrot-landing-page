@@ -8,7 +8,7 @@
 
 @mixin central-tablet {
     width: 100%;
-    max-width: 600px;
+    max-width: 816px;
     margin: 0px auto;
     padding-left: 20px;
     padding-right: 20px;
@@ -318,13 +318,11 @@ body {
     justify-content: space-around;
     gap: 0.8em;
 
-    width: 62em;
-    height: 35em;
-
     &__img {
-        @include border-images;
-        width: 100%;
+        max-width: 100%;
+        vertical-align: middle;
         height: auto;
+        @include border-images;
     }
 
     @media (max-width: 900px) {

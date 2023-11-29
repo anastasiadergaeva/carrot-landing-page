@@ -22,7 +22,7 @@ body {
 @media (max-width: 900px) {
   .container {
     width: 100%;
-    max-width: 600px;
+    max-width: 816px;
     margin: 0px auto;
     padding-left: 20px;
     padding-right: 20px;
@@ -196,7 +196,7 @@ body {
 @media (max-width: 900px) {
   .mainsection {
     width: 100%;
-    max-width: 600px;
+    max-width: 816px;
     margin: 0px auto;
     padding-left: 20px;
     padding-right: 20px;
@@ -242,7 +242,7 @@ body {
   #yarmarket,
   #aboutus {
     width: 100%;
-    max-width: 600px;
+    max-width: 816px;
     margin: 0px auto;
     padding-left: 20px;
     padding-right: 20px;
@@ -296,19 +296,18 @@ body {
   display: flex;
   justify-content: space-around;
   gap: 0.8em;
-  width: 62em;
-  height: 35em;
 }
 .screenshots__img {
+  max-width: 100%;
+  vertical-align: middle;
+  height: auto;
   border: 2px solid rgba(156, 156, 156, 0.518);
   border-radius: 30px;
-  width: 100%;
-  height: auto;
 }
 @media (max-width: 900px) {
   .screenshots {
     width: 100%;
-    max-width: 600px;
+    max-width: 816px;
     margin: 0px auto;
     padding-left: 20px;
     padding-right: 20px;
@@ -434,7 +433,7 @@ body {
 @media (max-width: 900px) {
   .aboutmaincontent {
     width: 100%;
-    max-width: 600px;
+    max-width: 816px;
     margin: 0px auto;
     padding-left: 20px;
     padding-right: 20px;
@@ -457,7 +456,7 @@ body {
 @media (max-width: 900px) {
   .aboutus__img {
     width: 100%;
-    max-width: 600px;
+    max-width: 816px;
     margin: 0px auto;
     padding-left: 20px;
     padding-right: 20px;
@@ -476,7 +475,7 @@ body {
 @media (max-width: 900px) {
   .aboutus__description {
     width: 100%;
-    max-width: 600px;
+    max-width: 816px;
     margin: 0px auto;
     padding-left: 20px;
     padding-right: 20px;
